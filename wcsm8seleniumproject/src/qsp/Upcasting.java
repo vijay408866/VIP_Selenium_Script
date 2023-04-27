@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -13,15 +12,13 @@ public class Upcasting {
 	public static void main(String[] args) throws InterruptedException {
 		
 		System.out.println("select The browser which u want to open: ");
-		Scanner sc = new Scanner(System.in);
+		Scanner sc= new Scanner(System.in);
 		String inputVal=sc.next();
 		
 		if(inputVal.equalsIgnoreCase("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
-			ChromeOptions co = new ChromeOptions();
-			co.addArguments("--remote-allow-origins=*");
-			WebDriver driver = new ChromeDriver(co);
+			WebDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			Thread.sleep(2000);
 			driver.close();

@@ -1,8 +1,8 @@
 package assinment;
 
 
+import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +19,7 @@ eo.addArguments("--remote-allow-origins=*");
 WebDriver driver = new EdgeDriver(eo);
 driver.manage().window().maximize();
 driver.get("https://www.flipkart.com/?");
-driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']")).click();
 driver.findElement(By.xpath("//input[@class='_3704LK']")).sendKeys("Mobalis");
 Thread.sleep(2000);

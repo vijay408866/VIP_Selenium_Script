@@ -2,14 +2,11 @@ package TotalSeleniumTopics;
 
 import java.time.Duration;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.support.ui.Select;
 
 public class WindosOrTabs {
 	public static void main(String[] args) throws InterruptedException {
@@ -28,7 +25,6 @@ public class WindosOrTabs {
 		//System.out.println(myallwindows);
 		
 		Iterator<String> iterate = myallwindows.iterator();
-		String parentwindow = iterate.next();
 		String childwindow = iterate.next();
 		
 		driver.switchTo().window(childwindow);

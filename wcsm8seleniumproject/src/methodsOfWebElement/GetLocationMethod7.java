@@ -19,7 +19,7 @@ public class GetLocationMethod7 {
     Point loc = input.getLocation();
     int xaxis=loc.getX();
     int yaxis=loc.getY();
-	System.out.println("x axis : "+xaxis+" : y axis : +yaxis");
+	System.out.println("x axis : "+xaxis+" : y axis :" +yaxis);
 	}
 
 }

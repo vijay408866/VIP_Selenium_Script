@@ -1,14 +1,10 @@
 package xpath;
-
 import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 
@@ -21,8 +17,8 @@ public class xpath5 {
 		WebDriver driver = new EdgeDriver(co);
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com/?");
-
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 //Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']")).click();
@@ -52,7 +48,6 @@ public class xpath5 {
 		List<WebElement> laptopsPrices = driver.findElements(By.xpath(
 				"//div[@class='_4rR01T']/ancestor::div[@class='_2kHMtA']/descendant::div[@class='_30jeq3 _1_WHN1']"));
 		
-		@SuppressWarnings("unused")
 		List<WebElement> laptopsNames = driver.findElements(By.xpath(
 				"//div[@class='_4rR01T']"));
 		

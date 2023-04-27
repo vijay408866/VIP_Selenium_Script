@@ -10,7 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class MoveToCursor {
 	// TODO Auto-generated constructor stub
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.edge.driver","./drivers/msedgedriver.exe");
 		WebDriver driver=new EdgeDriver();
@@ -19,7 +19,7 @@ public class MoveToCursor {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		WebElement electronic = driver.findElement(By.xpath("(//a[text()='Electronics'])[2]"));
-		
+		Thread.sleep(2000);
 		Actions action=new Actions(driver);
 		action.moveToElement(electronic).perform();
 		

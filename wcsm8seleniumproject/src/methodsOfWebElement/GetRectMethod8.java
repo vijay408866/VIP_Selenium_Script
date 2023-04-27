@@ -3,12 +3,10 @@ package methodsOfWebElement;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.v110.dom.model.Rect;
 
 public class GetRectMethod8 {
 	public static void main(String[] args) {
@@ -21,7 +19,7 @@ public class GetRectMethod8 {
     Rectangle rect = input.getRect();
     int xaxis=rect.getX();
     int yaxis=rect.getY();
-	System.out.println("x axis : "+xaxis+" : y axis : +yaxis");
+	System.out.println("x axis : "+xaxis+" : y axis :" +yaxis);
 	int h=rect.getHeight();
 	int w=rect.getWidth();
 	System.out.println("Height :"+h+" Width :" +w);

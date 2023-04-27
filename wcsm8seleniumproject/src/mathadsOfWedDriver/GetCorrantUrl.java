@@ -13,6 +13,6 @@ public class GetCorrantUrl {
 	driver.manage().window().maximize();
 	driver.get("http://omayo.blogspot.com/");
 	String url=driver.getCurrentUrl();
-	System.out.println("url");
+	System.out.println(url);
 }
 }
