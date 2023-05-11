@@ -5,20 +5,20 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class DoubleClickMethod {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
+		System.setProperty("webdriver.edge.driver","./drivers/msedgedriver.exe");
 
 		//	Open Browser
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		//Enter url of (ActiTime)
-		driver.get("http://laptop-knl22f4g/login.do");
+		driver.get("http://127.0.0.1/login.do;jsessionid=1d17jsj8cphjs");
 
 		// Handle login page with valid inputs
 		driver.findElement(By.name("username")).sendKeys("admin");

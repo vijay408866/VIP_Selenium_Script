@@ -19,9 +19,11 @@ public class frames {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		WebElement ifrme = driver.findElement(By.id("iframeResult"));
+		Thread.sleep(2000);
 		driver.switchTo().frame(ifrme);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[text()='Try it']")).click();
-		
-		driver.quit();
+		Thread.sleep(2000);
+		//driver.quit();
 	}
 }

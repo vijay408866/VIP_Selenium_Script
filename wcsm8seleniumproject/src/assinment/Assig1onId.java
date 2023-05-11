@@ -16,7 +16,7 @@ public class Assig1onId {
   driver.findElement(By.id("id_userLoginId")).sendKeys("abcd@123");
   Thread.sleep(2000);
   driver.findElement(By.id("id_password")).sendKeys("1234asdfg");
-  driver.findElement(By.xpath("//button[text()='sigh In']")).click();
+  driver.findElement(By.id("id_password")).submit();
 }
 
 }

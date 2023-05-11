@@ -52,7 +52,7 @@ public class ActitimeTestCase2 {
 	   {
 		   WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(sec));
 		   Boolean titleOfPage = wait.until(ExpectedConditions.titleContains(title));
-		   return titleOfPage;
+		   return titleOfPage;		   
 	   }
 	
 	

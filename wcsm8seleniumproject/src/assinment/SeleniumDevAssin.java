@@ -28,19 +28,19 @@ public class SeleniumDevAssin {
   act.moveToElement(target).perform();
   driver.findElement(By.xpath("//a[text()='Band']")).click();
   
-  
-  Robot robot = new Robot();
-  
-  
-  WebElement textfilter = driver.findElement(By.xpath("//div[text()='Filter by']"));
-  act.moveToElement(textfilter);
-  
-  robot.keyPress(KeyEvent.VK_COPY);
-  
-  WebElement textsearch= driver.findElement(By.xpath("//input[@class='form-text typeahead']"));
-  
-  robot.keyPress(KeyEvent.VK_PASTE);
-  
+  WebElement wb = driver.findElement(By.xpath("//div[text()='Filter by']"));
+  Thread.sleep(2000);
+  for (int i = 0; i < 2; i++) {
+	  
+	act.clickAndHold(wb).perform();
+	
+	Robot robot = new Robot();
+	robot.keyPress(KeyEvent.VK_CONTROL);
+	robot.keyPress(KeyEvent.VK_P);
+	
+	robot.keyRelease(KeyEvent.VK_P);
+	robot.keyRelease(KeyEvent.VK_CONTROL);
+}
   
 }
 
