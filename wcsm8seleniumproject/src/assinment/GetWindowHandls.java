@@ -53,11 +53,14 @@ public class GetWindowHandls {
 		Thread.sleep(2000);
 		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		Thread.sleep(2000);
 		WebElement removeB = driver.findElement(By.xpath("//div[text()='Remove']"));
 		Point p1 = removeB.getLocation();
 		int xaxis = p1.getX();
 	    int yaxis = p1.getY();
-	    jse.executeScript("Window.scrollBy("+xaxis+","+yaxis+")");
+	    
+	    Thread.sleep(2000);
+	    jse.executeScript("window.scrollBy("+xaxis+","+yaxis+")");
 	    
 		Thread.sleep(2000);
 		removeB.click();
