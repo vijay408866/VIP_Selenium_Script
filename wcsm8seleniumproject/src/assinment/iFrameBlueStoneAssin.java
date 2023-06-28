@@ -18,12 +18,12 @@ public class iFrameBlueStoneAssin {
 
 		driver.findElement(By.xpath("//span[text()='Not now']")).click();
 		Thread.sleep(2000);
-		WebElement iframe = driver.findElement(By.xpath("//iframe[@id='fc_widget']"));
-		
-		driver.switchTo().frame(iframe);
+//		WebElement iframe = driver.findElement(By.xpath("//iframe[@id='fc_widget']"));
+//		
+//		driver.switchTo().frame(iframe);
 		
 		// using String or name
-		//driver.switchTo().frame("fc_widget");
+		driver.switchTo().frame("fc_widget");
 		
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[@id='chat-icon']")).click();
