@@ -1,6 +1,6 @@
 package JAVA;
 
-public class FigonesisSerise2 {
+public class FibonesisSerise2 {
 	public static void main(String[] args) {
 		int n1=0;
 		int n2=1;

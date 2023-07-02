@@ -1,5 +1,4 @@
 package JAVA;
-
 public class ReversStringin3ways2 {
 	public static void main(String[] args) {
 		//1.program
@@ -10,7 +9,6 @@ public class ReversStringin3ways2 {
 			// ragjoreb era eW
 		}
 		System.out.println(newStr);
-		
 		//2.program
 		String newStr1="";
 		String[] strArr=str.split(" ");
@@ -23,7 +21,6 @@ public class ReversStringin3ways2 {
 			newStr1=newStr1+s+" ";
 		}
 		System.out.println(newStr1);
-
 		//3.program
 		String newStr2="";
 		String[] strArr1=str.split(" ");
@@ -31,9 +28,6 @@ public class ReversStringin3ways2 {
 			newStr2=strArr1[i]+" "+newStr2;			
 		}
 		System.out.println(newStr2);
-		
 		//berojgar are We
-		
-		
 	}
 }

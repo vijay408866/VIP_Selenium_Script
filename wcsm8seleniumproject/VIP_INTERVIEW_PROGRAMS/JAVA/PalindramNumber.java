@@ -19,5 +19,4 @@ public class PalindramNumber {
 		System.out.println("not");
 		}
 	}
-
 }

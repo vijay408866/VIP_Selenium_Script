@@ -18,7 +18,6 @@ public class RemoveString2 {
 			{
 				characters=characters+str.charAt(i);
 			}
-			
 		}
 		System.out.println(upper);
 		System.out.println(numbers);
