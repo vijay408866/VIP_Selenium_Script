@@ -45,7 +45,7 @@ public class GetWindowHandlseMethod2 {
 		{
 			System.out.println(wh);
 		}
-
+        
 
 	}
 }

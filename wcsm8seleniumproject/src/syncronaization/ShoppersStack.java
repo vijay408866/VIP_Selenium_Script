@@ -25,7 +25,7 @@ public class ShoppersStack {
 
 		// apply the Explicit wait to webelement
 
-		waitMethod(driver,30,"Check").click();
+		waitMethod(driver,30,"Check Delivery").click();
 		
 	}
 	

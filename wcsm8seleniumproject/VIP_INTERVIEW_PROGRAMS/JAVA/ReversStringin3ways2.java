@@ -1,33 +1,34 @@
 package JAVA;
 public class ReversStringin3ways2 {
 	public static void main(String[] args) {
-		//1.program
-		String str="We are berojgar";
-		String newStr="";
+		// program 1//
+		
+		String str = "vijay is silent";
+		String st = "";
 		for (int i = 0; i < str.length(); i++) {
-			newStr=str.charAt(i)+newStr;
-			// ragjoreb era eW
+			st = str.charAt(i) + st;
 		}
-		System.out.println(newStr);
-		//2.program
-		String newStr1="";
-		String[] strArr=str.split(" ");
+		System.out.println(st);                // tnelis si yajiv  //
+		// program 2//
+
+		String st1 = "";
+		String[] strArr = str.split(" ");
 		for (int i = 0; i < strArr.length; i++) {
-			String st=strArr[i]; 
+			st1 = strArr[i] + " " + st1;
+		}
+		System.out.println(st1);                 // silent is vijay  //
+		// program 3//
+		
+		String st2="";
+		String[]strArry=str.split(" ");
+		for (int i = 0; i < strArry.length; i++) {
+			String st3=strArry[i];
 			String s="";
-			for (int j=0;j<st.length();j++) {
-				s=st.charAt(j)+s;			 
-			}//eW era ragjoreb 
-			newStr1=newStr1+s+" ";
+			for (int j = 0; j < st3.length(); j++) {
+				s=st3.charAt(j)+s;
+			}
+			st2=st2+s+" ";
 		}
-		System.out.println(newStr1);
-		//3.program
-		String newStr2="";
-		String[] strArr1=str.split(" ");
-		for (int i = 0; i < strArr1.length; i++) {
-			newStr2=strArr1[i]+" "+newStr2;			
-		}
-		System.out.println(newStr2);
-		//berojgar are We
-	}
+		System.out.println(st2);                  // yajiv si tnelis  //
+	}                                                   
 }
